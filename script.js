@@ -199,13 +199,15 @@ function initTabs() {
         `).join('');
       }
 
-      // Changement d'image instantané : l'ancienne image disparaît et la nouvelle apparaît immédiatement
+      // Changement d'image instantané : masquage immédiat de toutes les autres photos et affichage direct de la photo sélectionnée
       let matched = false;
       dishImages.forEach(img => {
         if (img.dataset.category === catKey) {
+          img.style.setProperty('display', 'block', 'important');
           img.classList.add('active');
           matched = true;
         } else {
+          img.style.setProperty('display', 'none', 'important');
           img.classList.remove('active');
         }
       });
