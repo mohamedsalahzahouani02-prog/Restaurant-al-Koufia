@@ -144,7 +144,18 @@ const menuData = {
   }
 };
 
+// Préchargement en mémoire de toutes les photos du menu pour zéro délai
+function preloadMenuImages() {
+  Object.values(menuData).forEach(cat => {
+    if (cat.image) {
+      const img = new Image();
+      img.src = cat.image;
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  preloadMenuImages();
   initTabs();
   initNav();
   initMobileMenu();
@@ -155,7 +166,7 @@ function initTabs() {
   const tabs = document.querySelectorAll('.tab-btn');
   const categoryHeading = document.querySelector('.category-heading');
   const menuTable = document.querySelector('.menu-items-table');
-  const featuredImg = document.querySelector('.featured-dish-img');
+  const dishImages = document.querySelectorAll('.featured-dish-img');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -174,34 +185,37 @@ function initTabs() {
       const catKey = tab.dataset.category;
       const data = menuData[catKey] || menuData['entrees-froides'];
 
+      // Mise à jour immédiate du titre
       if (categoryHeading) categoryHeading.textContent = data.heading;
       
+      // Mise à jour immédiate de la liste des plats (sans latence ni clignotement)
       if (menuTable) {
-        // Animation douce d'apparition
-        menuTable.style.opacity = '0';
-        setTimeout(() => {
-          menuTable.innerHTML = data.items.map(item => `
-            <div class="menu-row">
-              <div class="dish-fr">${item.fr}</div>
-              <div class="dish-ar" dir="rtl">${item.ar}</div>
-              <div class="dish-price">${item.price}</div>
-            </div>
-          `).join('');
-          menuTable.style.opacity = '1';
-        }, 150);
+        menuTable.innerHTML = data.items.map(item => `
+          <div class="menu-row">
+            <div class="dish-fr">${item.fr}</div>
+            <div class="dish-ar" dir="rtl">${item.ar}</div>
+            <div class="dish-price">${item.price}</div>
+          </div>
+        `).join('');
       }
 
-      if (featuredImg && data.image) {
-        featuredImg.style.opacity = '0.35';
-        featuredImg.style.transform = 'scale(0.98)';
-        setTimeout(() => {
-          featuredImg.src = data.image;
-          if (data.imageHd) {
-            featuredImg.srcset = `${data.imageHd} 2x`;
-          }
-          featuredImg.style.opacity = '1';
-          featuredImg.style.transform = 'scale(1)';
-        }, 150);
+      // Changement d'image instantané : l'ancienne image disparaît et la nouvelle apparaît immédiatement
+      let matched = false;
+      dishImages.forEach(img => {
+        if (img.dataset.category === catKey) {
+          img.classList.add('active');
+          matched = true;
+        } else {
+          img.classList.remove('active');
+        }
+      });
+
+      // Secours si une seule balise img est présente
+      if (!matched && dishImages.length === 1 && data.image) {
+        dishImages[0].src = data.image;
+        if (data.imageHd) {
+          dishImages[0].srcset = `${data.imageHd} 2x`;
+        }
       }
     });
   });
