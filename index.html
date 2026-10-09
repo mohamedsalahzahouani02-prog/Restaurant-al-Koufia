@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Al Koufia - مطعم الكوفية | Cuisine palestinienne authentique à Sfax</title>
+  
+  <meta name="description" content="Restaurant Al Koufia à Sfax : cuisine palestinienne authentique, mezzés, grillades et spécialités du Levant dans un cadre chaleureux.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Preload Critical Hero Image for Instant Render -->
+  <link rel="preload" as="image" href="assets/hero-clean-bg.webp?v=5" type="image/webp">
+
+  <!-- Favicon 100% WebP -->
+  <link rel="icon" type="image/webp" href="assets/favicon.webp">
+
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Amiri (Arabic calligraphy), Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+  <!-- Page Wrapper -->
+  <div class="site-wrapper" id="siteWrapper">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header" id="navbar">
+      <div class="header-inner container">
+        <a href="#accueil" class="brand-logo" aria-label="Restaurant Al Koufia - Sfax">
+          <img src="assets/logo-al-koufia.webp" alt="Restaurant Al Koufia - Sfax" class="logo-img" decoding="async">
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#accueil" class="nav-link active">Accueil</a></li>
+            <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="#a-propos" class="nav-link">À propos</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-menu-drawer" id="mobileDrawer" aria-hidden="true">
+        <ul class="mobile-nav-list">
+          <li><a href="#accueil" class="mobile-nav-link active">Accueil</a></li>
+          <li><a href="#menu" class="mobile-nav-link">Notre Menu</a></li>
+          <li><a href="#a-propos" class="mobile-nav-link">L'Expérience</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact & Plan</a></li>
+        </ul>
+        <div class="mobile-drawer-cta">
+          <a href="tel:93597097" class="btn btn-primary btn-block">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            Appeler : 93 597 097
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="accueil">
+        <div class="hero-bg-layer" style="background-image: url('assets/hero-clean-bg.webp?v=5');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="hero-kicker">BIENVENUE CHEZ</span>
+            <h1 class="hero-title">
+              <span class="title-line">Restaurant</span>
+              <span class="title-line">Al Koufia</span>
+            </h1>
+
+            <div class="hero-description">
+              <p class="desc-highlight">Cuisine palestinienne authentique<br>au cœur de Sfax</p>
+              <p class="desc-sub">Découvrez des saveurs généreuses, des grillades,<br>des mezzés et des spécialités préparées avec passion.</p>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-primary">
+                Voir le menu
+                <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <svg class="btn-pin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Nous trouver
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: NOTRE MENU -->
+      <section class="section menu-section" id="menu">
+        <div class="container">
+          
+          <div class="section-heading text-center">
+            <span class="section-kicker">NOTRE MENU</span>
+            <h2 class="section-title">Notre Menu</h2>
+            <div class="section-ar-title" dir="rtl">قائمتنا</div>
+            <p class="section-subtitle">Découvrez les saveurs d'Al Koufia</p>
+          </div>
+
+          <!-- Category Tabs Navigation -->
+          <div class="menu-tabs-wrapper">
+            <div class="menu-tabs" role="tablist">
+              <button class="tab-btn active" role="tab" aria-selected="true" data-category="entrees-froides">Entrées froides</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="entrees-chaudes">Entrées chaudes</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="sandwich">Sandwich</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="makloub">Makloub</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="baguette-farcie">Baguette farcie</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="tacos">Tacos</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="burger">Burger</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="karmacha">Karmacha Al Koufia</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="plats">Nos plats</button>
+              <button class="tab-btn" role="tab" aria-selected="false" data-category="foukharet">Foukharet Al Koufia</button>
+            </div>
+          </div>
+
+          <!-- Menu Content: 2 Columns (List on left, Featured Image on right) -->
+          <div class="menu-grid">
+            <div class="menu-list-col">
+              <h3 class="category-heading">Entrées froides</h3>
+
+              <div class="menu-items-table">
+                <div class="menu-row">
+                  <div class="dish-fr">Sauce à l'ail</div>
+                  <div class="dish-ar" dir="rtl">ثومية</div>
+                  <div class="dish-price">4.000 DT</div>
+                </div>
+
+                <div class="menu-row">
+                  <div class="dish-fr">Houmous</div>
+                  <div class="dish-ar" dir="rtl">حمص</div>
+                  <div class="dish-price">5.000 DT</div>
+                </div>
+
+                <div class="menu-row">
+                  <div class="dish-fr">Salade Fatouch</div>
+                  <div class="dish-ar" dir="rtl">سلطة فتوش</div>
+                  <div class="dish-price">5.000 DT</div>
+                </div>
+
+                <div class="menu-row">
+                  <div class="dish-fr">Salade Kol slou</div>
+                  <div class="dish-ar" dir="rtl">سلطة كول سلو</div>
+                  <div class="dish-price">5.000 DT</div>
+                </div>
+
+                <div class="menu-row">
+                  <div class="dish-fr">Moutabal d'aubergine</div>
+                  <div class="dish-ar" dir="rtl">متبل باذنجان</div>
+                  <div class="dish-price">6.000 DT</div>
+                </div>
+
+                <div class="menu-row">
+                  <div class="dish-fr">Baba Ghanouj</div>
+                  <div class="dish-ar" dir="rtl">بابا غنوج</div>
+                  <div class="dish-price">6.000 DT</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-visual-col">
+              <div class="featured-dish-card">
+                <img src="assets/dish-entrees-froides.webp" alt="Assortiment d'entrées froides traditionnelles Al Koufia" class="featured-dish-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION: L'EXPÉRIENCE AL KOUFIA (À PROPOS) -->
+      <section class="section about-section" id="a-propos">
+        <div class="container">
+          
+          <div class="experience-card-wrapper">
+            
+            <!-- Left: Restaurant Interior Photo -->
+            <div class="experience-photo-col">
+              <img src="assets/restaurant-salle-interieur.webp" alt="Salle et intérieur du restaurant Al Koufia à Sfax" class="experience-photo" loading="lazy" decoding="async">
+            </div>
+
+            <!-- Center: Story Content -->
+            <div class="experience-content-col">
+              <span class="experience-kicker">À PROPOS</span>
+              <h2 class="experience-title">L'expérience Al Koufia</h2>
+
+              <div class="experience-body">
+                <p>Al Koufia vous invite à découvrir les saveurs authentiques de la cuisine palestinienne et levantine au cœur de Sfax.</p>
+                <p>Des mezzés généreux aux grillades préparées avec soin, notre cuisine met à l'honneur des recettes riches en goût et en tradition.</p>
+                <p>Un lieu chaleureux où partager un repas en famille ou entre amis.</p>
+              </div>
+            </div>
+
+            <!-- Right: Palestinian Tatreez Embroidery Strip -->
+            <div class="experience-tatreez-col" aria-hidden="true">
+              <img src="assets/tatreez-pattern.webp" alt="Motif traditionnel palestinien Tatreez" class="tatreez-pattern-img" loading="lazy" decoding="async">
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION: VENEZ NOUS RENDRE VISITE (CONTACT) -->
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          
+          <div class="section-heading text-center">
+            <span class="section-kicker">CONTACT</span>
+            <h2 class="section-title">Venez nous rendre visite</h2>
+          </div>
+
+          <div class="contact-grid">
+            
+            <!-- Info List -->
+            <div class="contact-info-list">
+              
+              <!-- Item 1: Adresse -->
+              <div class="contact-item">
+                <div class="contact-icon-badge" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <h3 class="contact-label">Adresse</h3>
+                  <p class="contact-text">
+                    <a href="https://www.google.com/maps/place/Restaurant+al+Koufia/@34.7388831,10.7567903,17z/data=!3m1!4b1!4m6!3m5!1s0x1301d3d33011f8bf:0xc339b15fde8ec5e6!8m2!3d34.7388831!4d10.7567903!16s%2Fg%2F11ytrw_xr2?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="contact-link">
+                      Immeuble al fourat, Rue Sidi Lakhmi,<br>Sfax 3027, Tunisie
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2: Téléphone -->
+              <div class="contact-item">
+                <div class="contact-icon-badge" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <h3 class="contact-label">Téléphone</h3>
+                  <p class="contact-text"><a href="tel:93597097" class="contact-link">93 597 097</a></p>
+                </div>
+              </div>
+
+              <!-- Item 3: Horaires -->
+              <div class="contact-item">
+                <div class="contact-icon-badge" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <h3 class="contact-label">Horaires</h3>
+                  <p class="contact-text">Tous les jours (7j/7) : 10:00 – 21:00<br><span style="font-size: 11.5px; color: #6B7280;">Samedi – Vendredi (10 AM – 9 PM)</span></p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Map View avec vraie intégration Google Maps interactive -->
+            <div class="contact-map-col">
+              <div class="map-card-wrapper">
+                <div class="map-card-header">
+                  <div class="map-card-title">
+                    <div class="map-icon-box" aria-hidden="true">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#A84429">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                      </svg>
+                    </div>
+                    <div class="map-title-text">
+                      <strong>Restaurant al Koufia</strong>
+                      <span>Rue Sidi Lakhmi, Sfax 3027</span>
+                    </div>
+                  </div>
+                  <a href="https://www.google.com/maps/place/Restaurant+al+Koufia/@34.7388831,10.7567903,17z/data=!3m1!4b1!4m6!3m5!1s0x1301d3d33011f8bf:0xc339b15fde8ec5e6!8m2!3d34.7388831!4d10.7567903!16s%2Fg%2F11ytrw_xr2?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     class="map-directions-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                    </svg>
+                    Itinéraire Google Maps
+                  </a>
+                </div>
+
+                <div class="map-iframe-container">
+                  <iframe 
+                    src="https://maps.google.com/maps?q=34.7388831,10.7567903+(Restaurant+al+Koufia)&amp;hl=fr&amp;z=16&amp;t=m&amp;output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade" 
+                    title="Carte interactive Google Maps - Restaurant al Koufia à Sfax">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        
+        <div class="footer-columns">
+          <!-- Col 0: Identité Al Koufia avec logo -->
+          <div class="footer-brand-col">
+            <a href="#accueil" class="footer-brand-link">
+              <img src="assets/logo-al-koufia.webp" alt="Restaurant Al Koufia Sfax" class="footer-logo-img" loading="lazy" decoding="async">
+            </a>
+            <p class="footer-brand-tagline">Cuisine palestinienne authentique & saveurs du Levant au cœur de Sfax.</p>
+          </div>
+
+          <!-- Col 1: Navigation -->
+          <div class="footer-nav-col">
+            <h4 class="footer-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#a-propos">À propos</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2: Réseaux Sociaux -->
+          <div class="footer-contact-col">
+            <h4 class="footer-title">Suivez-nous</h4>
+            <div class="footer-social-links">
+              <a href="https://www.facebook.com/alkoufia.sfax/" target="_blank" rel="noopener noreferrer" class="footer-social-link facebook" aria-label="Page Facebook Restaurant Al Koufia Sfax">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.instagram.com/restaurantalkoufia/" target="_blank" rel="noopener noreferrer" class="footer-social-link instagram" aria-label="Compte Instagram Restaurant Al Koufia">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
